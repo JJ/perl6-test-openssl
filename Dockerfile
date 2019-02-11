@@ -4,7 +4,7 @@ LABEL version="1.0" maintainer="JJ Merelo <jjmerelo@GMail.com>"
 # Add openssl
 RUN apk update && apk upgrade \
     && apk add --no-cache openssl-dev \
-    && zef install openssl
+    && zef install OpenSSL
 
 # Will run this
 ENTRYPOINT perl6 -v && zef install --deps-only . && zef test .
