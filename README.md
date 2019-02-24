@@ -8,7 +8,7 @@ less automatic, so this container solves that.
 
 Check
 out
-[this `.travis.yml` as an example](). A
+[this `.travis.yml` as an example](https://github.com/JJ/p6-app-squashathons/blob/master/.travis.yml). A
 generic one should go more or less like this
 
 ~~~
