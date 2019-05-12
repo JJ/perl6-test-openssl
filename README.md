@@ -1,12 +1,15 @@
 # Docker container with perl6 and openssl
 
-Test container with [OpenSSL](https://github.com/sergot/openssl)
-included. This needs an additional library installed, which makes it
+Test container, based on Alpine, with [OpenSSL](https://github.com/sergot/openssl)
+included. This module needs an additional library installed, which makes it
 less automatic, so this container solves that.
 
 ## Use in Travis
 
-A generic file should go more or less like this
+Check out
+[this `.travis.yml` as an example](https://github.com/JJ/p6-app-squashathons/blob/master/.travis.yml). A
+generic one should go more or less like this
+
 
 ~~~
 language:
