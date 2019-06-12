@@ -1,6 +1,7 @@
 # Docker container with perl6 and openssl
 
-Test container, based on Alpine, with [OpenSSL](https://github.com/sergot/openssl)
+Test container, based on Alpine, with
+the [OpenSSL](https://github.com/sergot/openssl) module
 included. This module needs an additional library installed, which makes it
 less automatic, so this container solves that.
 
@@ -20,7 +21,6 @@ services:
 
 install:
   - docker pull jjmerelo/perl6-test-openssl
-  - docker images
 
 script: docker run -t -v  $TRAVIS_BUILD_DIR:/test jjmerelo/perl6-test-openssl
 ~~~
