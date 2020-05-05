@@ -1,4 +1,4 @@
-# Docker container with perl6 and openssl
+# Docker container with Raku and openssl
 
 Test container, based on Alpine, with
 the [OpenSSL](https://github.com/sergot/openssl) module
@@ -20,9 +20,9 @@ services:
   - docker
 
 install:
-  - docker pull jjmerelo/perl6-test-openssl
+  - docker pull jjmerelo/raku-test-openssl
 
-script: docker run -t -v  $TRAVIS_BUILD_DIR:/test jjmerelo/perl6-test-openssl
+script: docker run -t -v  $TRAVIS_BUILD_DIR:/test jjmerelo/raku-test-openssl
 ~~~
 
 `docker images` is not needed, but it will show you the version it is

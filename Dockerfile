@@ -1,5 +1,5 @@
-FROM jjmerelo/test-perl6:latest
-LABEL version="1.0.1" maintainer="JJ Merelo <jjmerelo@GMail.com>"
+FROM jjmerelo/raku-test:latest
+LABEL version="1.0.2" maintainer="JJ Merelo <jjmerelo@GMail.com>"
 
 # Add openssl
 RUN apk update && apk upgrade \
@@ -7,7 +7,7 @@ RUN apk update && apk upgrade \
     && zef install OpenSSL
 
 # Will run this
-ENTRYPOINT perl6 -v && zef install --deps-only . && zef test .
+ENTRYPOINT raku -v && zef install --deps-only . && zef test .
 
 # Repeating mother's env
 ENV PATH="/root/.rakudobrew/bin:${PATH}"
